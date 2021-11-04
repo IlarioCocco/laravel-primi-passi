@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-// classi dinamiche con view
+// dinamic class with view
 Route::get('/hello', function () {
     return view('hello');
 });
