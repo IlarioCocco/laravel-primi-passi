@@ -17,11 +17,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/chi siamo', function () {
-    return "chi siamo";
+Route::get('/Hello World', function () {
+    return "<h1>Hello World</h1>";
 });
 
 Route::get('/contatti', function () {
-    return "<h3>contatti</h3>";
+    return "<h4>contatti</h4>";
 });
+
+Route::get('/link', function () {
+    return "<h4>link</h4>";
+});
+
+
 
