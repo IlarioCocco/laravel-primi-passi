@@ -17,9 +17,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-
-
-
+// classi dinamiche con view
 Route::get('/hello', function () {
     return view('hello');
 });
@@ -33,7 +31,7 @@ Route::get('/link', function () {
     return view('link');
 });
 
-
+// debug prove hello world visual li with foreach
 Route::get('/', function () {
 
     $data = [
