@@ -16,12 +16,13 @@
         <li><a href="/link">link</a></li>
     </ul>
 
+    
 
-    <ul>
+    {{-- <ul>
         @foreach ($titoli as $titolo)
         <li>{{$titolo}}</li>    
         @endforeach
-    </ul>
+    </ul> --}}
     
 </body>
 </html> 
