@@ -13,21 +13,35 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
+
+
+Route::get('/hello', function () {
+    return view('hello');
 });
 
-Route::get('/Hello World', function () {
-    return "<h1>Hello World</h1>";
-});
 
 Route::get('/contatti', function () {
-    return "<h4>contatti</h4>";
+    return view('contatti');
 });
 
 Route::get('/link', function () {
-    return "<h4>link</h4>";
+    return view('link');
 });
 
 
+Route::get('/', function () {
+
+    $data = [
+        "titoli" => [
+            "Hello World"
+        ]
+    ];
+
+    return view('index', $data);
+});
 

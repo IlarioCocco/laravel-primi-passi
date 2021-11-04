@@ -8,7 +8,20 @@
 </head>
 <body>
 
-    <h1>Hello World</h1>
+
+    <h1>Home Page</h1>
+    <ul>
+        <li><a href="/hello">Hello World</a></li>
+        <li><a href="/contatti">contatti</a></li>
+        <li><a href="/link">link</a></li>
+    </ul>
+
+
+    <ul>
+        @foreach ($titoli as $titolo)
+        <li>{{$titolo}}</li>    
+        @endforeach
+    </ul>
     
 </body>
-</html>
+</html> 
